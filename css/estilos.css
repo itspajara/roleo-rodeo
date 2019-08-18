@@ -1,0 +1,165 @@
+/*
+colors
+primary: 
+background-color: #DBE6B0
+*/
+
+
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Rancho', cursive;
+*/
+
+/*.icon-d20 {
+  position: relative;
+}*/
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+header {
+  /*background-color: #5C240A;*/
+  background-color: #1C5F4F;
+  color: white;
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin: -2px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin: 2px;
+}
+
+.fa-fw {
+  text-align: right;
+}
+
+.fa-2x {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 39.06px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28.43px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 21.33px;
+}
+
+.selector {
+  border-radius: 32px;
+  border: 3px solid #1c5f4f;
+  font-size: 21.33px;
+  margin-right: 12px;
+  padding: 8px 80px;
+}
+
+.button {
+  background-color: #1C5F4F;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: white;
+  font-size: 21.33px;
+  line-height: 1.2;
+  padding: 8px 48px;
+}
+
+.button-exp {
+  background-color: #FAC449;
+  font-size: 16px;
+  padding: 6px 12px;
+  color: black;
+  min-width: 64px;
+  margin: 4px;
+}
+
+body {
+  margin: 0;
+  background-color: #DBE6B0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+.text-dark {
+  color: #1C5F4F;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.card {
+  float: left;
+  display: block;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 15px;
+  padding: 40px;
+  border-radius: 12px;
+  width: calc( 66.66% - 30px );
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
+}
+
+.card-sm {
+  float: right;
+  width: calc( 33.33% - 30px );
+}
+
+/* .contact {
+  width: 69px;
+  height: 69px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 50%; */
+}
+
+.icon {
+  /* display: table-cell;
+  vertical-align: middle; */
+}
+
+.clear {
+  clear: both;
+}
+
+.button-list {
+  margin-bottom: 0;
+}
+
+.pj-selector {
+  line-height: 2;
+}

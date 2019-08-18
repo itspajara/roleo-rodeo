@@ -1,0 +1,20 @@
+<h1>Apuntes</h1>
+<h2>Forma alternativa de callback</h2>
+<p>Añadir una función <strong>con valor</strong> a un "EventListener"</p>
+<pre>
+<code>
+addExp5.addEventListener("click", function () { addExperience(5) });
+addExp10.addEventListener("click", function () { addExperience(10) });
+addExp15.addEventListener("click", function () { addExperience(15) });
+addExp20.addEventListener("click", function () { addExperience(20) });
+addExp25.addEventListener("click", function () { addExperience(25) });
+addExp30.addEventListener("click", function () { addExperience(30) });
+
+function addExperience(value)
+{
+  console.log("ESTA MIERDA FUNCIONA: " + value);
+
+  // var experience = experience + value;
+}
+</code>
+</pre>
