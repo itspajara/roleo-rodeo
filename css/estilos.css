@@ -42,14 +42,14 @@ header {
 .contact {
   display: flex;
   align-items: center;
-  margin: -2px;
+  margin: 0;
   list-style: none;
 }
 
 .link {
   text-decoration: none;
   color: white;
-  margin: 2px;
+  padding: .5rem;
 }
 
 .fa-fw {
