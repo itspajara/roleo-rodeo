@@ -27,7 +27,7 @@ font-family: 'Rancho', cursive;
 
 header {
   /*background-color: #5C240A;*/
-  background-color: #1C5F4F;
+  background-color: /*#1C5F4F*/#9366A4;
   color: white;
   margin-bottom: 30px;
   padding: 10px 0px;
@@ -81,14 +81,14 @@ h3 {
 
 .selector {
   border-radius: 32px;
-  border: 3px solid #1c5f4f;
+  border: 3px solid /*#1c5f4f*/#9366A4;
   font-size: 21.33px;
   margin-right: 12px;
   padding: 8px 80px;
 }
 
 .button {
-  background-color: #1C5F4F;
+  background-color: /*#1C5F4F*/#9366A4;
   border-radius: 10px;
   border: 3px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -99,7 +99,7 @@ h3 {
 }
 
 .button-exp {
-  background-color: #FAC449;
+  background-color: /*#FAC449*/#2DC8B5;
   font-size: 16px;
   padding: 6px 12px;
   color: black;
@@ -109,13 +109,13 @@ h3 {
 
 body {
   margin: 0;
-  background-color: #DBE6B0;
+  background-color: /*#DBE6B0*/#C3BCCF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 30px;
 }
 .text-dark {
-  color: #1C5F4F;
+  color: /*#1C5F4F*/#9366A4;
 }
 
 .row {
