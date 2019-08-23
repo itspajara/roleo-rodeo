@@ -19,6 +19,14 @@ font-family: 'Rancho', cursive;
   position: relative;
 }*/
 
+.container-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
