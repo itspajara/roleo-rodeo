@@ -27,6 +27,12 @@ font-family: 'Rancho', cursive;
   padding: 0 30px;
 }
 
+.item {
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -35,7 +41,7 @@ font-family: 'Rancho', cursive;
 
 header {
   /*background-color: #5C240A;*/
-  background-color: #2f586a;
+  background-color: #1c5f4f;
   color: white;
   margin-bottom: 30px;
   padding: 10px 0px;
@@ -89,14 +95,14 @@ h3 {
 
 .selector {
   border-radius: 32px;
-  border: 3px solid #2f586a;
+  border: 3px solid #1c5f4f;
   font-size: 21.33px;
   margin-right: 12px;
   padding: 8px 80px;
 }
 
 .button {
-  background-color: #2f586a;
+  background-color: #1c5f4f;
   border-radius: 10px;
   border: 3px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -107,7 +113,7 @@ h3 {
 }
 
 .button-exp {
-  background-color: #2DC8B5;
+  background-color: #fac449;
   font-size: 16px;
   padding: 6px 12px;
   color: black;
@@ -117,13 +123,13 @@ h3 {
 
 body {
   margin: 0;
-  background-color: #C3BCCF;
+  background-color: #DBE6B0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 30px;
 }
 .text-dark {
-  color: #2f586a;
+  color: #1c5f4f;
 }
 
 .row {
