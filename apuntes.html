@@ -1,20 +1,175 @@
-<h1>Apuntes</h1>
-<h2>Forma alternativa de callback</h2>
-<p>Añadir una función <strong>con valor</strong> a un "EventListener"</p>
-<pre>
-<code>
-addExp5.addEventListener("click", function () { addExperience(5) });
-addExp10.addEventListener("click", function () { addExperience(10) });
-addExp15.addEventListener("click", function () { addExperience(15) });
-addExp20.addEventListener("click", function () { addExperience(20) });
-addExp25.addEventListener("click", function () { addExperience(25) });
-addExp30.addEventListener("click", function () { addExperience(30) });
 
-function addExperience(value)
-{
-  console.log("ESTA MIERDA FUNCIONA: " + value);
+<!-- CSS colores -->
 
-  // var experience = experience + value;
+primary: #1c5f4f
+secondary: #fac449
+background-color: #DBE6B0
+
+
+<!-- CSS font families -->
+
+font-family-1: 'Lobster', cursive
+font-family-2: 'Open Sans', sans-serif
+
+
+<!-- CSS alternativa posocionamiento icono -->
+
+.icon-d20 {
+  position: relative;
 }
-</code>
+
+
+<!-- Apuntes
+Forma alternativa de callback
+Añadir una función <strong>con valor</strong> a un "EventListener" -->
+
+<pre>
+  <code>
+    addExp5.addEventListener("click", function () { addExperience(5) });
+    addExp10.addEventListener("click", function () { addExperience(10) });
+    addExp15.addEventListener("click", function () { addExperience(15) });
+    addExp20.addEventListener("click", function () { addExperience(20) });
+    addExp25.addEventListener("click", function () { addExperience(25) });
+    addExp30.addEventListener("click", function () { addExperience(30) });
+
+    function addExperience(value) {
+      console.log("ESTA MIERDA FUNCIONA: " + value);
+
+      // var experience = experience + value;
+    }
+  </code>
 </pre>
+
+
+<!-- HTML flex -->
+
+<div class="flex-container">
+  <div class="contact card"><h2><i class="icon fab fa-twitter fa-fw"></i></h2></div>
+  <div class="contact card"><h2><i class="icon fab fa-instagram fa-fw"></i></h2></div>
+  <div class="contact card"><h2><i class="icon fab fa-discord fa-fw"></i></h2></div>
+</div>
+
+
+<!-- HTML items, subitems y grid -->
+
+<div class="item combate">Combate</div>
+<div class="item personaje-1">Personaje 1</div>
+<div class="item personaje-2">Personaje 2</div>
+<div class="item resultado">Resultado</div> -->
+<div class="item subitem">
+  <div class="item">subitem #1</div>
+  <div class="item">subitem #2</div>
+  <div class="item">subitem #3</div>
+  <div class="item">subitem #4</div>
+  <div class="item">subitem #5</div>
+</div>
+
+
+<!-- CSS subitems (alternativa mientras no sabía usar "nth-of-type") -->
+
+.subitem {
+  background: purple;
+  overflow: auto;
+  display: grid;
+  grid-template: 70px 70px 70px / 100px 100px 100px;
+}
+
+
+<!-- CSS modificar item dentro de otro item -->
+
+.item .item {
+  background: #dadada;
+}
+
+
+<!-- CSS valores container grid -->
+
+.container-grid {
+  display: grid;
+  height: ;
+  max-width: ;
+  margin: ;
+  padding: ;
+  grid-column: ;
+  grid-row: ;
+  grid-template-columns: ;
+  grid-template-rows: ;
+  grid-template: / ;
+  grid-column-gap: ;
+  grid-row-gap: ;
+  grid-gap: / ;
+  grid-template-areas: "" "";
+  grid-auto-flow: ;
+  grid-auto-columns: ;
+  grid-auto-rows: ;
+  justify-content: ;
+  align-content: ;
+  justify-items: ;
+  align-items: ;
+}
+
+
+<!-- CSS grid areas -->
+
+.container-grid {
+  grid-template: / ;
+  grid-template-areas: "combate combate" "personaje-1 personaje-2" "resultado resultado";
+
+.combate {
+  grid-area: combate;
+}
+.personaje-1 {
+  grid-area: personaje-1;
+}
+.personaje-2 {
+  grid-area: personaje-2;
+}
+.resultado {
+  grid-area: resultado;
+}
+
+
+<!-- CSS grid uso de las líneas y el número de espacios que abarca un item con "span" -->
+
+.item:nth-of-type(1) {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.item:nth-of-type(2) {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.item:nth-of-type(3) {
+  grid-column: 6 / span 2;
+}
+
+
+<!-- CSS juego de líneas pero nombrándolas previamente para facilitar el trabajo -->
+
+.container-grid {
+grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+grid-template-rows: [superior] 200px [intermedia] 200px [inferior];
+}
+
+.item:nth-of-type(1) {
+  grid-column: inicio / destacado-end;
+  grid-row: superior / inferior;
+}
+.item:nth-of-type(2) {
+  grid-column: destacado-end / destacado2-end;
+  grid-row: superior / inferior;
+}
+.item:nth-of-type(3) {
+  grid-column: destacado2-end / final;
+  grid-row: superior / intermedia;
+}
+
+
+<!-- CSS modificar item por separado -->
+
+.item:nth-of-type(5) {
+  align-self: ;
+  justify-self: ;
+}
