@@ -1,27 +1,9 @@
 
-<!-- CSS colores -->
-
-primary: #1c5f4f
-secondary: #fac449
-background-color: #DBE6B0
-
-
-<!-- CSS font families -->
-
-font-family-1: 'Lobster', cursive
-font-family-2: 'Open Sans', sans-serif
-
-
-<!-- CSS alternativa posocionamiento icono -->
-
-.icon-d20 {
-  position: relative;
-}
-
-
-<!-- Apuntes
+<!--
+Apuntes
 Forma alternativa de callback
-Añadir una función <strong>con valor</strong> a un "EventListener" -->
+Añadir una función <strong>con valor</strong> a un "EventListener"
+-->
 
 <pre>
   <code>
@@ -172,4 +154,50 @@ grid-template-rows: [superior] 200px [intermedia] 200px [inferior];
 .item:nth-of-type(5) {
   align-self: ;
   justify-self: ;
+}
+
+
+<!-- HTML grid divs -->
+
+<section class="container-grid">
+  <div class="item">item #1</div>
+  <div class="item">item #2</div>
+  <div class="item">item #3</div>
+  <div class="item">item #4</div>
+  <div class="item">item #5</div>
+  <div class="item">item #6</div>
+  <div class="item">item #7</div>
+  <div class="item">item #8</div>
+  <div class="item">item #9</div>
+  <div class="item">item #10</div>
+  <div class="item">item #11</div>
+  <div class="item">item #12</div>
+</section>
+
+
+<!-- CSS grid divs clases -->
+
+.container-grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(4,100px);
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  justify-content: center;
+  align-content: start;
+}
+
+.item {
+  /* background: lightblue; */
+  /* margin: 15px; */
+  /* padding: 40px; */
+  /* border: 1px solid red; */
+  padding: 15px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
 }
