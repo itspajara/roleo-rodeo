@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <div class="container flex">
+      <section class="container flex">
         <h1><i class="fas fa-dice-d20 icon-d20"></i> Roleo Rodeo</h1>
         <ol class="contact">
           <li><a class="link" href="https://twitter.com/itspajara" target="_blank"><i class="icon fab fa-twitter fa-fw fa-2x"></i></a></li>
@@ -19,54 +19,24 @@
           <li><a class="link" href="https://discord.gg/wDQnVgU" target="_blank"><i class="icon fab fa-discord fa-fw fa-2x"></i></a></li>
           <li><a class="link" href="https://instagram.com/itspajara/" target="_blank"><i class="icon fab fa-instagram fa-fw fa-2x"></i></a></li>
         </ol>
-      </div>
+      </section>
     </header>
     <div class="container">
       <div class="row">
         <div class="card">
-          <h2>Contador de experiencia</h2>
-          <h3>¿Cuánto ha subido la experiencia?</h3>
-          <form action="contador-exp.html" method="get">
-            <p class="pj-selector">
-              <select class="selector" name="players" id="players">
-                <option value="juampi">Juampi</option>
-                <option value="chulis">Chulis</option>
-                <option value="duvy">Duvy</option>
-                <option value="alejandro">Alejandro</option>
-                <option value="antonio">Antonio</option>
-                <option value="michu">Michu</option>
-              </select>
-              <button class="button button-send" type="submit">Enviar</button>
-            </p>
-          </form>
-          <p>
-            Experiencia: <span id="result" class="text-dark"></span>
-          </p>
-          <p class="button-list">
-            <button class="button button-exp" data-exp="5" id="addExp5">+5</button>
-            <button class="button button-exp" data-exp="10" id="addExp10">+10</button>
-            <button class="button button-exp" data-exp="15" id="addExp15">+15</button>
-            <button class="button button-exp" data-exp="20" id="addExp20">+20</button>
-            <button class="button button-exp" data-exp="25" id="addExp25">+25</button>
-            <button class="button button-exp" data-exp="30" id="addExp30">+30</button>
-          </p>
+          <h2>Creador de personajes</h2>
+          
         </div>
         <div class="card card-sm">
-          <h2><i class="fas fa-hat-wizard"></i> Jugadores</h2>
-          <p>
-            <style contenteditable>
-              style {
-                display: block;
-                background: #333;
-                color: white;
-                padding: 16px;
-              }
-            </style>
-          </p>
+          <h2>Personajes creados</h2>
+          
         </div>
-        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div class="card card-2x">
+          <h2>Tirada</h2>
+        </div>
       </div>
     </div>
-    <script type="text/javascript" src="contador-exp.js"></script>
   </body>
 </html>
