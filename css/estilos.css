@@ -129,9 +129,9 @@ section {
   /* width: calc( 33.33% - 30px ); */
 }
 
-.card-2x {
-  flex-grow: 3;
-}
+/* .card-2x {
+  flex-grow: 1;
+} */
 
 /* Buttons & selectors */
 
