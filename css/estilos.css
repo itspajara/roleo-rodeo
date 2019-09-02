@@ -121,6 +121,11 @@ section {
   min-height: 348px;
   /* width: calc( 66.66% - 30px ); */
   box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
+  transition: background-color 0.5s ease;
+}
+
+.card:hover {
+  background-color: #fac449;
 }
 
 .card-sm {
